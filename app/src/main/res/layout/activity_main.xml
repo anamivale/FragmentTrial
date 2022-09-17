@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/layout1"
+        android:background="@color/purple_200">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="100dp"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+            android:text="Welcome to fragmentation"
+
+
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/view_resource"
+        android:layout_below="@+id/layout1">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/view_pager"/>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tab_layout"
+            android:background="@color/white"
+            app:tabTextColor="@color/black"
+            android:layout_height="50dp">
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="100dp"
+            android:id="@+id/fb"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/twitter"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="100dp"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/google"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
